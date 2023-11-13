@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="buttoncontainer">
+    <button id="loadButton" onclick="loadContent()">Click at your own risk</button>
+    </div>
+    <div class="container" id="contentContainer">
+        
+        <div id="hiddenContent" style="display: none;">
+            <h2>Here are all my personal interests</h2>
+            <h1>SHOWS!</h1>
+            <div class="box"><img src="https://cdn.cinematerial.com/p/297x/ntkf882y/the-office-dvd-movie-cover-md.jpg?v=1456217838" alt="Image 1"></div>
+            <div class="box"><img src="https://m.media-amazon.com/images/I/818jy1ZDV0L._AC_UF1000,1000_QL80_.jpg" alt="Image 1"></div>
+            <div class="box"><img src="https://www.jbhifi.com.au/cdn/shop/products/491839-Product-0-I-637511723946835819_1024x1024.jpg" alt="Image 1"></div>
+            <div class="box"><img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Modern_Family_season_10_poster.jpg" alt="Image 1">
+            </div>
+            <h1>FOOD!</h1>
+            <div class="food">
+                
+                <img src="https://i.pinimg.com/originals/f0/c5/80/f0c5801a29dff94ecd9a92e6c1b1307c.jpg" class="slide" alt="">
+                <img src="https://mcdonaldsblog.in/wp-content/uploads/2015/06/PiriPiri3.jpg" class="slide" alt="">
+                <img src="https://rumkisgoldenspoon.com/wp-content/uploads/2022/08/Fuchka.jpg" class="slide" alt="">
+                <img src="https://2.bp.blogspot.com/-xS2WkRckTsg/VWWsFqTg6WI/AAAAAAAAUfs/au5c4UVSV_s/s1600/Dry%2BMasala%2BBhindi%2B%25281%2529%2B-%2B1.jpg" class="slide" alt="">
+
+            </div>
+            <div class="nav">
+                <button onclick="goPrev()">Prev</button>
+                <button onclick="goNext()">Next</button>
+            </div>
+            <h1>~Music to vibe to~</h1>
+            <div class="dropdown">
+                
+                <select id="music">
+                    <option disabled selected value="">Musicians</option>
+                    <option value="1">Local Train</option>
+                    <option value="2">Atif Aslam</option>
+                    <option value="3">Taylor Swift</option>
+                    <option value="4">The Rockstar Album</option>
+                </select>
+            </div>
+            <h1>Borderline obsessed with:</h1>
+            <div class ="changeimage">
+                <img src="https://media.istockphoto.com/id/1155230429/vector/click-button-with-hand-pointer-clicking-click-me-vector-web-button-isolated-website-yellow.jpg?s=612x612&w=0&k=20&c=fasVBkTP5941Qo7miTDeiF3UlHJtH3WrOLQdW6soePo=" alt="secret" id="images">
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
