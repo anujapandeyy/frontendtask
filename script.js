@@ -32,6 +32,16 @@ const slideImage = () => {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 };
+//for the links
+function openLink() {
+  var select = document.getElementById("music");
+  var selectedValue = select.value;
+  console.log(selectedValue);
+
+  if (selectedValue) {
+    window.open(selectedValue, "_blank");
+  }
+}
 //for the toggle images
 
 const img = document.getElementById("images");
