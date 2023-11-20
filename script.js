@@ -1,5 +1,6 @@
 function loadContent() {
   document.getElementById("loadButton").style.display = "none";
+  document.getElementById("profile").style.display = "none";
   // Show the hidden content
   document.getElementById("hiddenContent").style.display = "block";
 }
