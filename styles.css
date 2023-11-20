@@ -1,59 +1,74 @@
 body {
-  display: flex;
+  /* display: flex;
 
+  justify-content: center; */
+  /* align-items: center; */
+  margin: 0;
+  padding-bottom: 10px;
+  background-color:#342237;
+}
+#profile {
+  display: flex;
+  padding-left: 540px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  background-color: #a3f7b5;
+  width:200px;
+  height: 200px;
 }
 .buttoncontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
-  padding-bottom: 600px;
+  /* padding-bottom: 600px; */
 }
 #loadButton {
   width: 150px;
   height: 50px;
-  background-color: #2f9c95;
+  background:linear-gradient(to right,#77314f,#a13651);
   font-family: "Courier New", Courier, monospace;
   border-radius: 10px;
-  color: #664147;
+  color: white;
   font-weight: bold;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-}
+  flex-wrap: wrap; Allow flex items to wrap to the next line
+} */
 
 .box {
+  padding: 5px;
   width: 200px;
-  height: 200px;
-  margin: 3px; /* Add space around the boxes */
+  height: 300px;
+  margin-inline: 50px; /* Add space around the boxes */
   display: inline-flex; /* Display boxes inline */
 }
 h1 {
-  text-align: center;
-  background-color: #e5f9e0;
+  text-align: left;
+  padding-left: 30px;
+  background:linear-gradient(to right,#77314f,#a13651);
   font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  color:azure;
 }
 h2 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+  color:#e3dfe6;
 }
-.box img {
+/* .box img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* the image will cover entire box */
-  border-radius: 8px; /* to round corners */
-}
+  object-fit: contain; the image will cover entire box
+  border-radius: 8px; to round corners
+
+} */
 
 .food {
   width: 300px;
@@ -78,9 +93,11 @@ h2 {
 }
 .nav button {
   font-size: 20px;
+  width:50px;
+  height:50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 5px;
-  background-color: #40c9a2;
+  background-color: rgba(226,62,87,0.3);
   border-radius: 10px;
 }
 .dropdown {
@@ -93,7 +110,8 @@ h2 {
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 250px;
-  background-color: #40c9a2;
+  background:linear-gradient(to left, #77314f,#a13651);
+  /* background-color: rgba(226,62,87,0.5); */
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -109,3 +127,26 @@ h2 {
 img {
   border-radius: 10px; /* for all images */
 }
+ nav {
+  background-color:#321d40;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height:50px;
+  text-align: right;
+
+ }
+ nav li { 
+  display:inline-block;
+  margin: 15px;
+ }
+ nav a {
+  color: #e3dfe6;
+  font-weight: lighter;
+
+ } 
+ #previcon, #nexticon {
+  color: #e3dfe6;
+
+
+ }
