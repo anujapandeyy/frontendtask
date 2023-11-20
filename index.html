@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Website</title>
+    <title>My favourites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <img id="profile" src="profile.jpeg" alt="me">
     <div class="buttoncontainer">
       <button id="loadButton" onclick="loadContent()">
         Click at your own risk
@@ -14,85 +17,103 @@
     </div>
     <div class="container" id="contentContainer">
       <div id="hiddenContent" style="display: none">
+        <nav>
+          <ul>
+            <li><a href="#shows">Shows</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#food">Books</a></li>
+            <li><a href="#musicc">Music</a></li>
+            <li><a href="#headoverheels">#headoverheels</a></li>
+          </ul>
+        </nav>
         <h2>HEY THERE!</h2>
         <h2>Here are all my personal interests</h2>
+        <div id="shows">
         <h1>SHOWS!</h1>
         <div class="box">
           <img
             src="https://cdn.cinematerial.com/p/297x/ntkf882y/the-office-dvd-movie-cover-md.jpg?v=1456217838"
-            alt="Image 1"
+            alt="The Office"
           />
         </div>
         <div class="box">
           <img
             src="https://m.media-amazon.com/images/I/818jy1ZDV0L._AC_UF1000,1000_QL80_.jpg"
-            alt="Image 1"
+            alt="Fleabag"
           />
         </div>
         <div class="box">
           <img
             src="https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg"
-            alt="Image 1"
+            alt="Brooklyn Nine Nine"
           />
         </div>
         <div class="box">
           <img
             src="https://upload.wikimedia.org/wikipedia/en/b/b6/Modern_Family_season_10_poster.jpg"
-            alt="Image 1"
+            alt="Modern Family"
           />
         </div>
+        </div>
+        <div id="books">
         <h1>BOOKS!</h1>
         <div class="box">
           <img
             src="https://m.media-amazon.com/images/I/61xmURSKbeL._AC_UF1000,1000_QL80_.jpg"
-            alt="Image 1"
+            alt="Tuesdays with Morrie"
           />
         </div>
         <div class="box">
           <img
             src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/7/30/1406719196162/b57b6007-afb1-4e3c-8263-b29f6534aee8-1360x2040.jpeg?width=700&quality=85&auto=format&fit=max&s=ac278c37a7564a3950831f264b08e215"
-            alt="Image 1"
+            alt="Harry Potter"
           />
         </div>
         <div class="box">
           <img
             src="https://m.media-amazon.com/images/I/A1fPTEf2nKL._AC_UF1000,1000_QL80_.jpg"
-            alt="Image 1"
+            alt="The Palace of illusions"
           />
         </div>
         <div class="box">
           <img
             src="https://m.media-amazon.com/images/I/918Wj+YGZvL._AC_UF1000,1000_QL80_.jpg"
-            alt="Image 1"
+            alt="And the mountains echoed"
           />
         </div>
+        </div>
+        <div id="food">
         <h1>FOOD!</h1>
         <div class="food">
           <img
             src="https://i.pinimg.com/originals/f0/c5/80/f0c5801a29dff94ecd9a92e6c1b1307c.jpg"
             class="slide"
-            alt=""
+            alt="momos"
           />
           <img
             src="https://mcdonaldsblog.in/wp-content/uploads/2015/06/PiriPiri3.jpg"
             class="slide"
-            alt=""
+            alt="peri peri fries"
           />
           <img
             src="https://rumkisgoldenspoon.com/wp-content/uploads/2022/08/Fuchka.jpg"
             class="slide"
-            alt=""
+            alt="phuchka"
           />
           <img
             src="https://2.bp.blogspot.com/-xS2WkRckTsg/VWWsFqTg6WI/AAAAAAAAUfs/au5c4UVSV_s/s1600/Dry%2BMasala%2BBhindi%2B%25281%2529%2B-%2B1.jpg"
             class="slide"
-            alt=""
+            alt="mom's bhindi"
           />
         </div>
+        
+        
         <div class="nav">
-          <button onclick="goPrev()">Prev</button>
-          <button onclick="goNext()">Next</button>
+          <button onclick="goPrev()"><i id="previcon" class="fa-solid fa-backward-step"></i></button>
+          <button onclick="goNext()"><i id="nexticon" class="fa-solid fa-forward-step"></i></button>
         </div>
+      </div>
+        <div id="musicc">
         <h1>~Music to vibe to~</h1>
         <div class="dropdown">
           <select id="music" onchange="openLink()">
@@ -100,7 +121,7 @@
             <option value="https://www.youtube.com/@Thelocaltrain">
               Walking alone at night
             </option>
-            <option value="https://www.youtube.com/watch?v=_rt93vyijqk">
+            <option value="https://www.youtube.com/watch?v=2AgKNj_4mM4">
               When its raining
             </option>
             <option value="https://www.youtube.com/@TaylorSwift">
@@ -111,6 +132,8 @@
             </option>
           </select>
         </div>
+        </div>
+        <div id="headoverheels">
         <h1>Borderline obsessed with:</h1>
         <div class="changeimage">
           <img
@@ -118,6 +141,7 @@
             alt="secret"
             id="images"
           />
+        </div>
         </div>
         <h2>Keep swimming</h2>
       </div>
